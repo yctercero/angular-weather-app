@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #025373;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+ul, ol{
+  list-style-type: none;
+}
+.clearfix:after{
+  content: ' ';
+  display: block;
+  clear: both;
+  height: 0;
+}
+h2{
+  text-align: center;
+  font-size: 52px;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+h3{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 42px;
+}
+h4{
+  font-size: 32px;
+  text-transform: uppercase;
+}
+#search{
+  width: 400px;
+  margin: 20px auto 0;
+}
+
+#search input{
+  display: block;
+  float: left;
+  font-family: 'Lato', sans-serif;
+}
+#search input[type='text']{
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+#search input[type='submit']{
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 45px;
+  margin: 0 0 0 5px;
+  color: white;
+  background-color: #F26938;
+}
+#todaysWeather{
+  width: 200px;
+  height: 250px;
+  background-color: rgba(255,255,255,0.2);
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#todaysWeather div{
+  font-weight: lighter;
+}
+
+.orange{
+  color: #F26938;
+  font-weight: 500;
+}
+
+.mainTemp{
+  font-size: 62px;
+  font-weight: lighter;
+}
+
+.minTemp, .maxTemp{
+  padding: 5px 0;
+  font-size: 18px;
+}
+#weeksWeather{
+  width: 95%;
+  margin: 40px auto;
+}
+#weeksWeather li{
+  float: left;
+  width: 13.8%;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
