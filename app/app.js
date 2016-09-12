@@ -1,7 +1,8 @@
 angular.module('app', [
   'ui.router',
   'app.displayWeather',
-  'app.search'
+  'app.search',
+  'app.services'
 ])
 .config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/search');
@@ -9,7 +10,7 @@ angular.module('app', [
   $stateProvider
   .state('search', {
     url: '/search',
-    templateUrl: 'app/search.html',
+    templateUrl: 'app/searchForm.html',
     controller: 'SearchController'
   })
   .state('weather', {

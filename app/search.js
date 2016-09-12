@@ -1,8 +1,11 @@
 angular.module('app.search', [])
-.controller('SearchController', function($scope, $location){
+.controller('SearchController', ['$scope', '$location', 'WeatherAPI', function($scope, $location, WeatherAPI){
     $scope.city;
 
     $scope.search = function(){
-        // some function that sends request to api
+        WeatherAPI.getWeather($scope.city)
+            .then(function(data){
+                console.log(data);
+            })
     }
-});
+}]);
