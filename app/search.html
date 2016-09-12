@@ -1,6 +1,6 @@
 <div id='search' className='clearfix'>
-    <form name="searchCity">
-        <input type='text' placeholder='Type city name here...' />
+    <form name="searchCity" ng-submit="search()">
+        <input ng-model="city" type='text' placeholder='Type city name here...' />
         <input type='submit' value='Go'/>
     </form>
 </div>
