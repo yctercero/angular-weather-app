@@ -5,7 +5,6 @@ angular.module('app.search', [])
     $scope.search = function(){
         WeatherAPI.getWeather($scope.city)
             .then(function(data){
-                console.log(data);
                 WeatherAPI.weather = data;
                 $location.path('/weather');
             })

@@ -34,6 +34,16 @@ h4{
   font-size: 32px;
   text-transform: uppercase;
 }
+.button{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: block
+  margin: 10px;
+}
+.button:hover{
+  text-decoration: underline;
+}
 #search{
   width: 400px;
   margin: 20px auto 0;
