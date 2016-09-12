@@ -1,5 +1,5 @@
 angular.module('app.displayWeather', [])
-.controller('DisplayWeatherController', function($scope, $location, WeatherAPI){
+.controller('DisplayWeatherController', ['$scope', '$location', 'WeatherAPI', function($scope, $location, WeatherAPI){
     $scope.weather = WeatherAPI.weather;
 
     $scope.farenheit = function(K){
@@ -17,4 +17,4 @@ angular.module('app.displayWeather', [])
     $scope.makeUrl = function(url){
         return "http://openweathermap.org/img/w/" + url + ".png";
     }
-});
+}]);
